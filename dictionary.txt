@@ -1,0 +1,3 @@
+duck:con ga
+cat:con cho
+dog:con meo
