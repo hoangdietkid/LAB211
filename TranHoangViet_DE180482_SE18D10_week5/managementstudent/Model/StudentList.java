@@ -1,4 +1,4 @@
-package TranHoangViet_DE180482_SE18D10_week5.Model;
+package TranHoangViet_DE180482_SE18D10_week5.managementstudent.Model;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -37,10 +37,6 @@ public class StudentList {
             }
         }
         return students;
-    }
-
-    public void updateStudent(Student student) {
-
     }
 
     public void delStudent(Student student) {

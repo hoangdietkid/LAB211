@@ -1,4 +1,4 @@
-package TranHoangViet_DE180482_SE18D10_week5.Model;
+package TranHoangViet_DE180482_SE18D10_week5.managementstudent.Model;
 
 public class Student {
     private String id;
@@ -46,6 +46,10 @@ public class Student {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    public void display() {
+        System.out.printf("%-15s%-15s%-15s\n", studentName, semester, courseName);
     }
 
 }
