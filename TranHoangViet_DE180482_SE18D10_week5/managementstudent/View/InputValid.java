@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import TranHoangViet_DE180482_SE18D10_week5.managementstudent.Model.Student;
 
-
 public class InputValid {
     public static final Scanner scanner = new Scanner(System.in);
 
@@ -113,6 +112,15 @@ public class InputValid {
                     && temp.getStudentName().equalsIgnoreCase(student.getStudentName())
                     && temp.getSemester().equalsIgnoreCase(student.getSemester())
                     && temp.getCourseName().equalsIgnoreCase(student.getCourseName())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean checkIdAndName(String id, String name, ArrayList<Student> students) {
+        for (Student student : students) {
+            if (student.getId().equals(id) && !student.getStudentName().equals(name)) {
                 return false;
             }
         }

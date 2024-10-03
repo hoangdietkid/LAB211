@@ -18,12 +18,10 @@ public class ManageStudent {
             String id = input.checkInputString();
             System.out.println("Enter student name: ");
             String studentName = input.checkInputString();
-            for (Student student : studentList.getStudentList()) {
-                if (student.getId().equals(id) && student.getStudentName().equals(studentName)) {
-                    System.err.println("Id has exist student.");
-                    System.out.println("Please input again: ");
-                    continue;
-                }
+            if (!input.checkIdAndName(id, studentName, studentList.getStudentList())) {
+                System.err.println("Id not match with name of student.");
+                System.out.println("Please input again:");
+                continue;
             }
             System.out.println("Enter semester: ");
             String semester = input.checkInputString();
@@ -36,7 +34,7 @@ public class ManageStudent {
                 continue;
             }
             studentList.createStudent(student);
-            count = studentList.getStudentList().size();
+            count = studentList.getStudentList().size() + 1;
             if (count > 3) {
                 if (input.checkInputYN()) {
                     return;
@@ -126,7 +124,7 @@ public class ManageStudent {
             return;
         } else {
             for (Student student : studentList.getStudentList()) {
-                String temp = student.getId() + " | " + student.getStudentName() + " | " + student.getSemester()
+                String temp = student.getId() + " | " + student.getStudentName() + " | " + student.getCourseName()
                         + " | ";
                 hmReport.put(temp, hmReport.getOrDefault(temp, 0) + 1);
             }
