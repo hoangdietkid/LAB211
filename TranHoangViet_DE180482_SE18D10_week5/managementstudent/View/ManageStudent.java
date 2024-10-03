@@ -105,6 +105,8 @@ public class ManageStudent {
                     System.out.println("Do you want to change name or id for all: ");
                     if (!input.checkInputYN()) {
                         changeInfor(students, idStudent, courseName);
+                        student.setSemester(semester);
+                        student.setCourseName(courseName);
                         System.err.println("Update success.");
                     }
                 }
