@@ -42,5 +42,4 @@ public class StudentList {
     public void delStudent(Student student) {
         studentList.remove(student);
     }
-
 }

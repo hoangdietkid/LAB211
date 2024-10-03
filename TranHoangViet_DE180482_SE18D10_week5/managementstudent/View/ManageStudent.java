@@ -115,7 +115,6 @@ public class ManageStudent {
             }
 
         }
-
     }
 
     public void report() {

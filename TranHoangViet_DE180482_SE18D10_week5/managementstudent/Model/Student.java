@@ -1,6 +1,10 @@
 package TranHoangViet_DE180482_SE18D10_week5.managementstudent.Model;
 
+/**
+ * Student
+ */
 public class Student {
+
     private String id;
     private String studentName;
     private String semester;
@@ -51,5 +55,4 @@ public class Student {
     public void display() {
         System.out.printf("%-15s%-15s%-15s\n", studentName, semester, courseName);
     }
-
 }

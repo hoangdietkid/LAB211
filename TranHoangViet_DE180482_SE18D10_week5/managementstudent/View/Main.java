@@ -1,7 +1,6 @@
 package TranHoangViet_DE180482_SE18D10_week5.managementstudent.View;
 
 public class Main {
-
     public static Menu menu = new Menu();
     public static ManageStudent manageStudent = new ManageStudent();
 

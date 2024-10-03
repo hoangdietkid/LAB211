@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import TranHoangViet_DE180482_SE18D10_week5.managementstudent.Model.Student;
 
+
 public class InputValid {
     public static final Scanner scanner = new Scanner(System.in);
 
