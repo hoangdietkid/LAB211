@@ -85,11 +85,11 @@ public class InputValid {
     public boolean checkInputUD() {
         while (true) {
             String input = checkInputString();
-            if (!input.equals("U") && !input.equals("D")) {
+            if (!input.equalsIgnoreCase("U") && !input.equalsIgnoreCase("D")) {
                 System.out.println("Must be U or D");
                 System.out.println("Enter again: ");
             } else {
-                return input.equals("U");
+                return input.equalsIgnoreCase("U");
             }
         }
     }

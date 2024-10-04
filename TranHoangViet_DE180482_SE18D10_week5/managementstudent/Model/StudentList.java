@@ -31,7 +31,7 @@ public class StudentList {
 
     public ArrayList<Student> searchStudentId(String id) {
         ArrayList<Student> students = new ArrayList<>();
-        for (Student student : students) {
+        for (Student student : studentList) {
             if (student.getId().equals(id)) {
                 students.add(student);
             }

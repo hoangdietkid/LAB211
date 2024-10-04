@@ -78,6 +78,7 @@ public class ManageStudent {
             Student student = getListStudentFound(students);
             System.out.println("Do you want to Update (U) or Delete (D) student:");
             if (input.checkInputUD()) {
+                System.out.println("Enter id:");
                 String idStudent = input.checkInputString();
                 System.out.println("Enter student name: ");
                 String studentName = input.checkInputString();
@@ -144,9 +145,9 @@ public class ManageStudent {
     public Student getListStudentFound(ArrayList<Student> students) {
         System.out.println("List student found: ");
         int count = 1;
-        System.out.printf("%-10s%15s%15s%15s\n", "Number", "Student name", "Semester", "Course Name");
+        System.out.printf("%-10s%15s%15s%15s\n", "Number", "Studentname", "Semester", "Course Name");
         for (Student student : students) {
-            System.out.printf("%-10s%15s%15s%15s\n", count, student.getStudentName(), student.getSemester(),
+            System.out.printf("%-10d%15s%15s%15s\n", count, student.getStudentName(), student.getSemester(),
                     student.getCourseName());
             count++;
         }
