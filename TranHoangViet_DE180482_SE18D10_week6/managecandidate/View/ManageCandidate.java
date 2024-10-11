@@ -209,7 +209,7 @@ public class ManageCandidate {
             for (Candidate candidate : candidateList.getCandidateList()) {
                 if (candidate instanceof Experience) {
                     if (candidate.getFirstName().contains(name) || candidate.getLastName().contains(name)) {
-                        candidate.toString();
+                        candidate.display();
                     }
                 }
             }
@@ -218,7 +218,7 @@ public class ManageCandidate {
             for (Candidate candidate : candidateList.getCandidateList()) {
                 if (candidate instanceof Fresher) {
                     if (candidate.getFirstName().contains(name) || candidate.getLastName().contains(name)) {
-                        candidate.toString();
+                        candidate.display();
                     }
                 }
             }
@@ -227,7 +227,7 @@ public class ManageCandidate {
             for (Candidate candidate : candidateList.getCandidateList()) {
                 if (candidate instanceof Intern) {
                     if (candidate.getFirstName().contains(name) || candidate.getLastName().contains(name)) {
-                        candidate.toString();
+                        candidate.display();
                     }
                 }
             }

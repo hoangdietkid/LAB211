@@ -87,11 +87,10 @@ public class Candidate {
         this.candidateid = candidateid;
     }
 
-    @Override
-    public String toString() {
+    public void display() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-        return this.firstName + this.lastName + "|" + sdf.format(this.birthDate) + "|"
-                + this.address + "|" + this.phone + "|" + this.email + "|"
-                + this.typeOfCandidate;
+        System.out.println(this.firstName + " " + this.lastName + " | " + sdf.format(this.birthDate) + "|"
+                + this.address + " | " + this.phone + " | " + this.email + " | "
+                + this.typeOfCandidate);
     }
 }
