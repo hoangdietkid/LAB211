@@ -58,7 +58,7 @@ public class ManageFraction {
     public void display() {
         ArrayList<Fraction> temp = fractionList.getFractionList();
         Collections.sort(temp);
-        System.out.print("[ ");
+        System.out.print("[");
         for (int i = 0; i < temp.size(); i++) {
             if (i == 0) {
                 System.out.print(temp.get(i).toString());
