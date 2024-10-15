@@ -56,4 +56,5 @@ public class BubbleSortAlgorithm {
         bs.sortBubble(arr, n);
         System.out.print("Sorted array: " + Arrays.toString(arr));
     }
+    
 }

@@ -18,6 +18,7 @@ public class Main {
                     break;
                 case 3:
                     manageExpense.displayExpense();
+                    break;
                 case 4:
                     System.out.println("Exiting the program.");
                     System.exit(0);
