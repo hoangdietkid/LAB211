@@ -1,8 +1,5 @@
 package TranHoangViet_DE180482_SE18D10_week8.buildingmodulecsvfileformat.View;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Scanner;
 
 public class InputValid {
@@ -33,7 +30,6 @@ public class InputValid {
             } catch (NumberFormatException e) {
                 System.err.println("Invalid input. Please enter a valid integer:");
             }
-
         }
     }
 
