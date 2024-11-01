@@ -1,0 +1,5 @@
+Washing Machine,Samsung,15/05/2015,2000,Active
+Refrigerator,LG,10/10/2017,150,Expired
+Microwave,Panasonic,01/01/2019,1200,Active
+Air Conditioner,Daikin,05/07/2018,2500,Active
+Vacuum Cleaner,Philips,25/12/2016,600,Expired
